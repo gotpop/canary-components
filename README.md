@@ -15,3 +15,9 @@ https://www.google.com/intl/en_uk/chrome/canary
 # Canary Components
 
 This project pulls together several new and experimental technologies into a single 'concept' build. The goal is to use a combination of raw HTML/CSS & TypeScript to build out a component based application.
+
+![Subgrid](./public/img/subgrid.png)
+
+<h1 align="center">
+	<img width="100%" src="./public/img/subgrid.png" alt="Image of shop website">
+</h1>
