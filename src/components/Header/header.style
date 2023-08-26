@@ -1,0 +1,36 @@
+@scope {
+  :scope {
+    display: flex;
+    justify-content: center;
+    min-width: 100vw;
+    position: sticky;
+    view-transition-name: header;
+    contain: layout;
+    padding: 0 2rem;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+
+    .grid {
+      padding: 2rem 0;
+    }
+  }
+
+  .nav {
+    grid-column: 5 / span 8;
+    display: grid;
+    grid-template-columns: subgrid;
+
+    .link {
+      padding: 1rem;
+      border-color: lightgray;
+      border-style: solid;
+      border-width: 1px;
+      border-radius: var(--border-radius);
+      text-align: center;
+      grid-column: span 2;
+      align-self: center;
+    }
+  }
+}

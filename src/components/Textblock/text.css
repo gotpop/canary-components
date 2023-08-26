@@ -1,0 +1,19 @@
+@scope (.lorem) {
+  .title {
+    font-weight: bold;
+    grid-column: span 12;
+    font-size: 5rem;
+  }
+
+  .text {
+    grid-column: span 12;
+    grid-row: 2;
+    columns: 2;
+    gap: 2rem;
+
+    > p {
+      padding-bottom: 2rem;
+      opacity: 0.85;
+    }
+  }
+}

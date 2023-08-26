@@ -1,0 +1,36 @@
+:root {
+  --max-width: 1200px;
+
+  --border-radius-sm: 8px;
+  --border-radius: 12px;
+  --border-radius-lg: 16px;
+  --border-radius-xl: 24px;
+
+  --font-size-xs: 0.75em;
+  --font-size-sm: 0.875em;
+  --font-size-md: 1em;
+  --font-size-lg: 1.125em;
+  --font-size-xl: 1.25em;
+  --font-size-2xl: 1.5em;
+  --font-size-3xl: 1.875em;
+
+  --spacing: 2rem;
+
+  --eraser-bg: #171717;
+  --white: rgb(255 255 255 / 62%);
+  --white-transparent: rgb(255 255 255 / 20%);
+  --color-paragraph: #a0a0a0;
+  --color-paragraph-light: #c0c0c0;
+  --color-paragraph-dark: #808080;
+  --color-list: #fafafa;
+
+  --primary-glow: conic-gradient(from 180deg at 50% 50%, #16abff33 0deg, #0885ff33 55deg, #54d6ff33 120deg, #0071ff33 160deg, transparent 360deg);
+  --secondary-glow: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+
+  --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+  --secondary-glow: linear-gradient(to bottom right, rgba(1, 65, 255, 0), rgba(1, 65, 255, 0), rgba(1, 65, 255, 0.3));
+}

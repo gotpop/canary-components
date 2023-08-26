@@ -1,0 +1,26 @@
+@scope {
+  :scope {
+    --local-scroll-snap-align: none;
+
+    padding: 10rem;
+    background-color: var(--eraser-bg);
+    scroll-snap-align: var(--local-scroll-snap-align);
+
+    .grid {
+      grid-template-columns: auto;
+      place-content: center;
+    }
+
+    .logo {
+      grid-row: 1;
+      justify-self: center;
+    }
+
+    .copyright {
+      grid-row: 2;
+      justify-self: center;
+      grid-column: span 3;
+      color: var(--color-paragraph);
+    }
+  }
+}

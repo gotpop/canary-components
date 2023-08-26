@@ -1,0 +1,73 @@
+@scope {
+  .outer {
+    background: var(--eraser-bg);
+    border: none;
+    max-height: 90vh;
+    max-width: 90vw;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: transform 0.5s, opacity 0.5s, display 0.5s;
+    width: 100%;
+
+    &::backdrop {
+      backdrop-filter: blur(30px);
+    }
+
+    &:popover-open {
+      transform: translateY(0);
+      opacity: 1;
+
+      @starting-style {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+    }
+
+    .button-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 1rem;
+      width: 4rem;
+      height: 4rem;
+      background: var(--eraser-bg);
+      border: none;
+      font-size: var(--font-size-3xl);
+    }
+
+    .inner {
+      display: flex;
+      width: 100%;
+      height: auto;
+
+      & img {
+        max-height: 85vh;
+      }
+    }
+  }
+
+  .figure {
+    background: var(--eraser-bg);
+    border-radius: 5px;
+    margin: 0rem;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .button-view {
+      display: flex;
+      align-self: flex-end;
+      margin: 1rem;
+      font-size: var(--font-size-2xl);
+      padding: 0.5em 1em;
+    }
+  }
+
+  img {
+    height: auto;
+    max-height: 65vh;
+    object-fit: contain;
+    width: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+.grid {
+  align-content: start;
+  display: grid;
+  gap: 2rem;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr repeat(14, [col-start] 3rem) 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+}
+
+.grid::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  inset: 0 0;
+  height: 100vh;
+  margin: 0 auto;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0) 95%, rgb(0, 255, 255) 100%); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 95%, rgb(0, 255, 255) 100%);
+  background-size: 100% 1rem;
+}

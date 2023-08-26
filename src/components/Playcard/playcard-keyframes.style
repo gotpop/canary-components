@@ -1,0 +1,54 @@
+@scope {
+  @keyframes rotate-and-blur {
+    0% {
+      transform: rotateY(90deg);
+      filter: blur(0.3rem);
+    }
+    100% {
+      filter: blur(0rem);
+      transform: rotateY(0deg);
+    }
+  }
+
+  @keyframes scale-and-rotate-1 {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+      rotate: 45deg;
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+      rotate: -2deg;
+    }
+  }
+
+  @keyframes scale-and-rotate-2 {
+    0% {
+      transform: translateX(100%);
+      scale: 2;
+      rotate: 45deg;
+    }
+
+    100% {
+      transform: translateX(10%);
+      scale: 1;
+      rotate: 0deg;
+    }
+  }
+
+  @keyframes scale-and-rotate-3 {
+    0% {
+      transform: translateX(100%);
+      scale: 2;
+      rotate: 45deg;
+    }
+
+    100% {
+      transform: translateX(20%);
+      rotate: 3deg;
+      scale: 1;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@scope {
+  :scope {
+    width: 100vw;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    height: 100vh;
+    padding-top: 222px;
+
+    display: flex;
+    justify-content: center;
+    min-width: 100vw;
+  }
+
+  .main {
+    .intro {
+      grid-column: 1 / span 5;
+      padding: 2rem 0;
+      gap: 2rem;
+    }
+
+    .pop {
+      grid-column: 6 / span 7;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "editor.codeActionsOnSave": ["source.organizeImports", "source.fixAll.eslint"],
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.style": "css"
+  },
+  "prettier.printWidth": 100,
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+}

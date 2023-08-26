@@ -1,0 +1,71 @@
+.article1 {
+  padding: 3rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  grid-column: 2 / 6;
+  align-self: baseline;
+}
+
+.article2 {
+  padding: 3rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  grid-column-end: span 10;
+  grid-row: 2 / auto;
+  align-self: start;
+}
+
+.article3 {
+  padding: 3rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  grid-column: 3 / span 6;
+  grid-row: 3;
+  align-self: start;
+}
+
+.article4 {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  grid-column-end: span;
+  /* grid-row: 1 / auto; */
+  align-self: start;
+}
+
+.h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  line-height: 1.13em;
+  margin: 0;
+  padding: 0;
+  margin-bottom: calc(1rem + 7px);
+  leading-trim: both;
+  text-edge: cap alphabetic;
+  color: black;
+}
+
+.p {
+  font-size: 1.025rem;
+  line-height: 1rem;
+  padding: 0;
+  leading-trim: both;
+  text-edge: cap alphabetic;
+  font-size: 0.8rem;
+  color: black;
+}
+
+.p:first-letter {
+  -webkit-initial-letter: 3;
+  color: red;
+  padding-right: 0.5em;
+  padding-top: 3px;
+  leading-trim: both;
+  text-edge: cap text;
+  position: relative;
+  bottom: -4px;
+}

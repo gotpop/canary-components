@@ -1,0 +1,1 @@
+export { FooterLocal } from "./FooterLocal"

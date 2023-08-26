@@ -1,0 +1,15 @@
+@scope {
+  :scope {
+    --max-width: 1400px;
+    --full-width: 0;
+
+    align-items: start;
+    display: grid;
+    flex: var(--full-width) 1 var(--max-width);
+    gap: 2rem;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-rows: max-content; */
+    grid-auto-rows: min-content;
+    max-width: var(--max-width);
+  }
+}

@@ -1,0 +1,21 @@
+@scope {
+  .grid-wrap {
+    --max-width: 1400px;
+    --full-width: 0;
+
+    display: flex;
+    justify-content: center;
+    min-width: 100vw;
+
+    .intro {
+      grid-column: 1 / span 5;
+      padding: 2rem 0;
+      gap: 2rem;
+    }
+
+    .pop {
+      grid-column: 6 / span 7;
+      /* grid-row: 2; */
+    }
+  }
+}

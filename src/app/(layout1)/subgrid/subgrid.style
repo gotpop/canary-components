@@ -1,0 +1,27 @@
+@scope {
+  :scope {
+    display: flex;
+    justify-content: center;
+    min-width: 100vw;
+
+    .grid {
+      align-items: start;
+      grid-template-rows: repeat(3, min-content min-content);
+      grid-auto-rows: min-content;
+    }
+
+    .intro {
+      grid-column: 4 / span 6;
+      padding: var(--spacing);
+      gap: var(--spacing);
+      background-color: var(--eraser-bg);
+      border-radius: var(--border-radius);
+
+      .title {
+        font-size: var(--font-size-3xl);
+        font-weight: 900;
+        margin-top: 0;
+      }
+    }
+  }
+}

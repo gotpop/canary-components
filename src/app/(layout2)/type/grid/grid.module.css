@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(14, 1fr);
+  /* grid-template-rows: repeat(auto-fill, minmax(2rem, 40rem));
+  grid-auto-rows: min-content; */
+  grid-auto-rows: baseline;
+  gap: 2rem;
+  position: relative;
+  align-content: start;
+}
+
+.grid::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  inset: 0 0;
+  height: 100vh;
+  margin: 0 auto;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0) 95%, rgb(0, 255, 255) 100%); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 95%, rgb(0, 255, 255) 100%);
+  background-size: 100% 1rem;
+}
+
+.sub {
+  grid-template-columns: subgrid;
+  grid-column: 2 / span 12;
+  display: grid;
+}
