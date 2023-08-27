@@ -8,7 +8,7 @@ export default function Scroll() {
 
   return (
     <div>
-      <Hero />
+      <Hero title="Scroll Timeline" />
       {cards}
       <Footer snap="start" />
     </div>

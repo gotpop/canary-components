@@ -1,6 +1,7 @@
 import { Footer } from "@/components/Footer"
 import { GetStyles } from "@/components/GetStyles"
 import { GridMain } from "@/components/GridMain"
+import { Hero } from "@/components/Hero"
 import { PlayCard } from "@/components/Playcard"
 import { playCardsData } from "@/data/playCards"
 import styles from "./play.style"
@@ -11,9 +12,7 @@ export default function Play() {
   return (
     <>
       <GetStyles styles={styles} data-style="PlayPage" />
-      <section className="hero">
-        <h2>Play</h2>
-      </section>
+      <Hero title="Play" />
       <section className="section">
         <GridMain>
           <div className="play-cards">{playCards}</div>

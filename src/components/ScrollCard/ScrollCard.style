@@ -1,13 +1,14 @@
 @scope {
   :scope {
-    animation-range: contain 25% contain 25%;
-    animation-timeline: view();
-    animation: switch linear both;
     display: flex;
     justify-content: center;
     min-width: 100vw;
+    min-height: 100dvh;
     padding: calc(var(--spacing) * 7) 0 calc(var(--spacing) * 5) 0;
     scroll-snap-align: center;
+    animation: switch linear both;
+    animation-timeline: view();
+    animation-range: contain 25% contain 25%;
 
     .grid {
       align-items: center;
@@ -31,14 +32,14 @@
   }
 
   .text {
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: var(--border-radius);
     grid-column: 1 / 6;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
     grid-row: 1;
     padding: var(--spacing);
-    transition: all 0.5s ease-in-out;
-    z-index: 1;
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
 
     .title {
       font-size: var(--font-size-2xl);
@@ -52,14 +53,14 @@
     }
 
     .button-view {
-      align-items: center;
+      display: flex;
+      padding: 1em 2em;
+      gap: 1em;
       background-color: var(--eraser-bg);
       border-radius: var(--border-radius);
       border: 1px solid var(--white-transparent);
-      display: flex;
-      gap: 1em;
+      align-items: center;
       justify-content: space-around;
-      padding: 1em 2em;
     }
   }
 
@@ -78,10 +79,10 @@
   }
 
   .figure {
-    border-radius: var(--border-radius);
     grid-column: 5 / 13;
     grid-row: 1;
     margin: 0;
+    border-radius: var(--border-radius);
     overflow: hidden;
     transition: all 0.5s ease-in-out;
   }

@@ -13,9 +13,6 @@ interface CardProps {
     width: number
     height: number
   }
-  list: {
-    text: string
-  }[]
   button: { [key: string]: string }
 }
 

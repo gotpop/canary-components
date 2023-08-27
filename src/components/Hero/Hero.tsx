@@ -1,11 +1,15 @@
 import { GetStyles } from "../GetStyles"
 import styles from "./Hero.style"
 
-export const Hero: React.FC = () => {
+interface HeroProps extends React.HTMLAttributes<HTMLElement> {
+  title: string
+}
+
+export const Hero: React.FC<HeroProps> = ({ title, ...rest }) => {
   return (
-    <section className="hero">
+    <section className="hero" {...rest}>
       <GetStyles styles={styles} data-style="Hero" />
-      <h2 className="title">Scroll Timeline</h2>
+      <h2 className="title">{title}</h2>
     </section>
   )
 }

@@ -8,9 +8,6 @@ export const cardsScrollData = [
             width: 1000,
             height: 500,
         },
-        list: [
-
-        ],
         button: {
             text: "View More",
             href: "/home",
@@ -25,9 +22,6 @@ export const cardsScrollData = [
             width: 1000,
             height: 500,
         },
-        list: [
-
-        ],
         button: {
             text: "View More",
             href: "/container",
@@ -42,9 +36,6 @@ export const cardsScrollData = [
             width: 1000,
             height: 500,
         },
-        list: [
-
-        ],
         button: {
             text: "View More",
             href: "/subgrid",
@@ -59,28 +50,9 @@ export const cardsScrollData = [
             width: 1000,
             height: 500,
         },
-        list: [
-
-        ],
         button: {
             text: "View More",
             href: "/scroll",
-        }
-    },
-    {
-        title: "Natural phenomena",
-        description: "The golden ratio appears in many natural phenomena, such as the spiral patterns of shells, the branching patterns of trees, and the proportions of the human body. It is also found in many works of art and architecture, such as the Parthenon in Athens and the paintings of Leonardo da Vinci.",
-        image: {
-            src: "/img/fibonacci-spiral-red.jpg",
-            alt: "Appdir1",
-            width: 1000,
-            height: 500,
-        },
-        list: [
-        ],
-        button: {
-            text: "View More",
-            href: "/play",
         }
     },
 ]
