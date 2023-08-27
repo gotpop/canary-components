@@ -1,0 +1,21 @@
+@scope {
+  :scope {
+    min-height: 80vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    height: 100vh;
+    padding-top: 222px;
+
+    & h2 {
+      font-size: 6rem;
+      font-weight: 900;
+      margin: 0 0 calc(var(--spacing) * 5) 0;
+      color: var(--color-heading);
+    }
+  }
+}

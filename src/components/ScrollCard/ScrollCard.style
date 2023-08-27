@@ -1,0 +1,102 @@
+@scope {
+  :scope {
+    animation-range: contain 25% contain 25%;
+    animation-timeline: view();
+    animation: switch linear both;
+    display: flex;
+    justify-content: center;
+    min-width: 100vw;
+    padding: calc(var(--spacing) * 7) 0 calc(var(--spacing) * 5) 0;
+    scroll-snap-align: center;
+
+    .grid {
+      align-items: center;
+      align-content: center;
+    }
+
+    &:nth-child(even) {
+      background-color: var(--eraser-bg);
+    }
+  }
+
+  @keyframes switch {
+    from {
+      --show-figure: 0;
+      --show-text: 0;
+    }
+    to {
+      --show-figure: 1;
+      --show-text: 1;
+    }
+  }
+
+  .text {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: var(--border-radius);
+    grid-column: 1 / 6;
+    grid-row: 1;
+    padding: var(--spacing);
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+
+    .title {
+      font-size: var(--font-size-2xl);
+      margin-top: 0;
+    }
+
+    .description {
+      font-size: var(--font-size-md);
+      line-height: 1.5;
+      color: var(--color-paragraph);
+    }
+
+    .button-view {
+      align-items: center;
+      background-color: var(--eraser-bg);
+      border-radius: var(--border-radius);
+      border: 1px solid var(--white-transparent);
+      display: flex;
+      gap: 1em;
+      justify-content: space-around;
+      padding: 1em 2em;
+    }
+  }
+
+  @container style(--show-text: 1) {
+    .text {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @container style(--show-text: 0) {
+    .text {
+      opacity: 0;
+      transform: translateX(-30%);
+    }
+  }
+
+  .figure {
+    border-radius: var(--border-radius);
+    grid-column: 5 / 13;
+    grid-row: 1;
+    margin: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+
+  @container style(--show-figure: 1) {
+    .figure {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @container style(--show-figure: 0) {
+    .figure {
+      opacity: 0;
+      transform: translateX(30%);
+    }
+  }
+}
