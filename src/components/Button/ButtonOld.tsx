@@ -1,6 +1,6 @@
 "use client"
 
-import styles from "./button.style"
+import styles from "./Button.style"
 
 type Props = {
   children: React.ReactNode
