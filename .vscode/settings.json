@@ -1,9 +1,26 @@
 {
-  "editor.codeActionsOnSave": ["source.organizeImports", "source.fixAll.eslint"],
-  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": [
+    "source.organizeImports",
+    "source.fixAll.eslint"
+  ],
   "files.associations": {
+    "*.css": "css",
     "*.style": "css"
   },
-  "prettier.printWidth": 100,
-  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.options": {
+    "extensions": [".js", ".jsx", ".ts", ".tsx"]
+  },
+  "prettier.requireConfig": true,
+  "prettier.useEditorConfig": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }
