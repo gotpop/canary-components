@@ -1,1 +1,1 @@
-export { PlayCard } from "./Playcard";
+export { PlayCard } from "./PlayCard";
