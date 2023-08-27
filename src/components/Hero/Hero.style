@@ -1,19 +1,19 @@
 @scope {
   :scope {
     --local-scroll-snap-align: none;
+    --local-padding-top: 222px;
 
     min-height: 80vh;
     min-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-
     scroll-snap-align: var(--local-scroll-snap-align);
     scroll-snap-stop: always;
     height: 100vh;
-    padding-top: 222px;
+    padding-top: var(--local-padding-top);
 
-    & h2 {
+    .title {
       font-size: 6rem;
       font-weight: 900;
       margin: 0 0 calc(var(--spacing) * 5) 0;

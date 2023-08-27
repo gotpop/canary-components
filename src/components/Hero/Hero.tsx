@@ -5,10 +5,11 @@ import styles from "./Hero.style"
 interface HeroProps extends React.HTMLAttributes<HTMLElement> {
   title: string
   snap?: string
+  paddingTop?: string
 }
 
-export const Hero: React.FC<HeroProps> = ({ title, snap, ...rest }) => {
-  const varsCSS = { ["--local-scroll-snap-align"]: snap } as CSSProperties
+export const Hero: React.FC<HeroProps> = ({ title, snap, paddingTop, ...rest }) => {
+  const varsCSS = { ["--local-scroll-snap-align"]: snap, ["--local-padding-top"]: paddingTop } as CSSProperties
 
   return (
     <section className="hero" style={varsCSS} {...rest}>
