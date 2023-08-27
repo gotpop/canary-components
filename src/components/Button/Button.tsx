@@ -1,18 +1,17 @@
-"use client"
-
+import { GetStyles } from "../GetStyles"
 import styles from "./Button.style"
 
-type Props = {
+type ButtonProps = {
   children: React.ReactNode
 }
 
-export const Button = ({ children }: Props) => {
+export const Button: React.FC<ButtonProps> = ({ children, ...rest }) => {
   return (
     <>
-      <style>{styles}</style>
-      <a className="button" href="#">
+      <GetStyles styles={styles} data-style="Button" />
+      <button className="button" {...rest}>
         {children}
-      </a>
+      </button>
     </>
   )
 }
