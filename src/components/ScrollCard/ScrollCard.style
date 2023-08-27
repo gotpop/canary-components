@@ -45,10 +45,20 @@
     padding: var(--spacing);
     border-radius: var(--border-radius);
     backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
 
     .title {
-      font-size: var(--font-size-2xl);
+      font-size: var(--font-size-3xl);
       margin-top: 0;
+    }
+
+    .p {
+      font-size: var(--font-size-lg);
+      line-height: 1.7;
+      color: var(--color-paragraph);
+      /* display: inlline-flex; */
+      padding-bottom: var(--spacing);
     }
 
     .description {
@@ -65,7 +75,8 @@
       border-radius: var(--border-radius);
       border: 1px solid var(--white-transparent);
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
+      align-self: flex-end;
     }
   }
 
