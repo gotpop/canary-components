@@ -1,9 +1,9 @@
-import { GridMain } from "../GridMain"
-import styles from "./Snap.style"
+import { GridMain } from "../GridMain";
+import styles from "./Snap.style";
 
 type SnapProps = {
-  children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
 export const Snap = ({ children }: SnapProps) => {
   return (
@@ -11,5 +11,5 @@ export const Snap = ({ children }: SnapProps) => {
       <style>{styles}</style>
       <GridMain>{children}</GridMain>
     </section>
-  )
-}
+  );
+};

@@ -1,6 +1,6 @@
-import "./text.css"
+import "./text.css";
 
-import { Block } from "@/components/Block"
+import { Block } from "@/components/Block";
 
 const textContent = {
   title: "Win more",
@@ -11,7 +11,7 @@ const textContent = {
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae aperiam cupiditate aspernatur quidem corporis cum dicta dolorum, alias natus saepe et earum illo aliquid possimus. Tempore et accusantium non eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae aperiam cupiditate aspernatur quidem corporis cum dicta dolorum, alias natus saepe et earum illo aliquid possimus. Tempore et accusantium non eius.",
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae aperiam cupiditate aspernatur quidem corporis cum dicta dolorum, alias natus saepe et earum illo aliquid possimus. Tempore et accusantium non eius.",
   ],
-}
+};
 
 export const Text: React.FC = () => {
   return (
@@ -23,5 +23,5 @@ export const Text: React.FC = () => {
         ))}
       </section>
     </Block>
-  )
-}
+  );
+};
