@@ -7,28 +7,6 @@
     margin: 50rem 0 50rem 0;
   }
 
-  .play-intro {
-    grid-column: span 12;
-    grid-row: 1;
-    position: sticky;
-    padding-top: 5rem;
-    top: 5rem;
-    align-self: start;
-
-    > p {
-      padding-bottom: 2rem;
-
-      &:first-child {
-        &::first-letter {
-          font-size: 3rem;
-          font-weight: bold;
-          float: left;
-          padding-right: 0.5rem;
-        }
-      }
-    }
-  }
-
   .play-cards {
     grid-column: span 4 / 9;
     grid-row: 1;

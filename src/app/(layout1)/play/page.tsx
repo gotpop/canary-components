@@ -11,8 +11,8 @@ export default function Play() {
 
   return (
     <>
+      <Hero title="Play" paddingTop="0"/>
       <GetStyles styles={styles} data-style="PlayPage" />
-      <Hero title="Play" />
       <section className="section">
         <GridMain>
           <div className="play-cards">{playCards}</div>
