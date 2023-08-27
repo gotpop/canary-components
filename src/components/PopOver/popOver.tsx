@@ -2,7 +2,7 @@ import React, { HTMLAttributes } from "react"
 
 import { GetStyles } from "@/components/GetStyles"
 import Image from "next/image"
-import styles from "./popOver.style"
+import styles from "./PopOver.style"
 
 type PopOverProps = {
   imageSrc: string

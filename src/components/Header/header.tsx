@@ -1,7 +1,7 @@
 import { Logo } from "@/components/Logo";
 import { links as linksData } from "@/data/navLinks";
 import { GridMain } from "../GridMain";
-import styles from "./header.style";
+import styles from "./Header.style";
 
 export const Header: React.FC = () => {
   const links = linksData.map((link) => (
