@@ -10,9 +10,7 @@ type PlayProps = {
 };
 
 export const PlayCard: React.FC<PlayProps> = ({
-  title,
   imageSrc,
-  description,
   className,
 }) => {
   return (
