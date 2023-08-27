@@ -1,6 +1,6 @@
+import { GridMain } from "@/components/GridMain";
 import { Logo } from "@/components/Logo";
 import { links as linksData } from "@/data/navLinks";
-import { GridMain } from "../GridMain";
 import styles from "./Header.style";
 
 export const Header: React.FC = () => {
