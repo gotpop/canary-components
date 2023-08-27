@@ -15,7 +15,6 @@
     position: relative;
     transition: transform 1s ease;
     transform-style: preserve-3d;
-    /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 91%); */
     filter: drop-shadow(1rem 1.5rem 1rem rgba(0, 0, 0, 91%));
     border-radius: 1rem;
 
