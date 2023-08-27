@@ -4,7 +4,7 @@ import styles from "./Hero.style"
 
 interface HeroProps extends React.HTMLAttributes<HTMLElement> {
   title: string
-  snap: string
+  snap?: string
 }
 
 export const Hero: React.FC<HeroProps> = ({ title, snap, ...rest }) => {
