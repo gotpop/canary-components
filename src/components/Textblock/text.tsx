@@ -9,7 +9,6 @@ const textContent = {
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae aperiam cupiditate aspernatur quidem corporis cum dicta dolorum, alias natus saepe et earum illo aliquid possimus. Tempore et accusantium non eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae aperiam cupiditate aspernatur quidem corporis cum dicta dolorum, alias natus saepe et earum illo aliquid possimus. Tempore et accusantium non eius.",
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae aperiam cupiditate aspernatur quidem corporis cum dicta dolorum, alias natus saepe et earum illo aliquid possimus. Tempore et accusantium non eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae aperiam cupiditate aspernatur quidem corporis cum dicta dolorum, alias natus saepe et earum illo aliquid possimus. Tempore et accusantium non eius.",
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae aperiam cupiditate aspernatur quidem corporis cum dicta dolorum, alias natus saepe et earum illo aliquid possimus. Tempore et accusantium non eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae aperiam cupiditate aspernatur quidem corporis cum dicta dolorum, alias natus saepe et earum illo aliquid possimus. Tempore et accusantium non eius.",
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae aperiam cupiditate aspernatur quidem corporis cum dicta dolorum, alias natus saepe et earum illo aliquid possimus. Tempore et accusantium non eius.",
   ],
 };
 
