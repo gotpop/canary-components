@@ -1,6 +1,6 @@
-import { HTMLAttributes } from "react"
 import { BsImage } from "react-icons/bs"
 import { GetStyles } from "../GetStyles"
+import { HTMLAttributes } from "react"
 import { PopOver } from "../PopOver"
 import styles from "./HomePanel.style"
 
@@ -39,7 +39,7 @@ export const HomePanel: React.FC<HomePanelProps> = ({
       <GetStyles styles={styles} data-style="HomePanel" />
       <div className="intro">
         <h3 className="title">{title}</h3>
-        <p>{description}</p>
+        <p className="p">{description}</p>
         <ul className="list">
           {features.map(({ icon, text }, index) => (
             <li key={index}>

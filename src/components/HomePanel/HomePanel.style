@@ -7,14 +7,16 @@
     .title {
       font-size: var(--font-size-3xl);
       font-weight: 600;
-      margin-top: 0;
+      margin: 0 0 0.5rem 0;
     }
 
-    & p {
+    .p {
       font-size: var(--font-size-lg);
       line-height: 1.5;
       color: var(--color-paragraph);
-      text-balance: balance;
+      text-wrap: balance;
+      display: inline-flex;
+      padding-bottom: 0.5rem;
     }
   }
 
@@ -22,14 +24,10 @@
     grid-column: 5 / span 8;
   }
 
-  .p {
-    display: inline-flex;
-  }
-
   .list {
     list-style: none;
     padding: 0;
-    margin-bottom: calc(var(--spacing) * 2);
+    margin: 0 0 3rem 0;
     font-size: var(--font-size-lg);
     line-height: 1.5;
 
@@ -37,7 +35,6 @@
       margin-bottom: 0.5rem;
       color: var(--color-list);
       display: flex;
-      /* justify-content: space-between; */
       align-items: center;
       gap: calc(var(--spacing) / 2);
     }

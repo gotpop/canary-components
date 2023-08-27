@@ -1,0 +1,113 @@
+@scope {
+  :scope {
+    --offset-left: -15rem;
+    --offset-right: 15rem;
+
+    display: flex;
+    justify-content: center;
+    min-width: 100vw;
+    height: 100dvh;
+    padding-top: 100px;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
+    animation: switch linear both;
+    animation-timeline: view();
+    animation-range: contain 25% contain 25%;
+
+    .grid {
+      align-items: center;
+      align-content: center;
+    }
+
+    &:nth-child(odd) {
+      background-color: var(--eraser-bg);
+    }
+  }
+
+  @keyframes switch {
+    from {
+      --show-figure: 0;
+      --show-text: 0;
+    }
+    to {
+      --show-figure: 1;
+      --show-text: 1;
+    }
+  }
+
+  .text {
+    grid-column: 1 / 6;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+    grid-row: 1;
+    padding: var(--spacing);
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      font-size: var(--font-size-3xl);
+      margin: 0 0 0.5rem 0;
+    }
+
+    .p {
+      font-size: var(--font-size-lg);
+      line-height: 1.7;
+      color: var(--color-paragraph);
+      padding-bottom: var(--spacing);
+      text-wrap: balance;
+    }
+
+    .button-view {
+      display: flex;
+      padding: 1em 2em;
+      gap: 1em;
+      background-color: var(--eraser-bg);
+      border-radius: var(--border-radius);
+      border: 1px solid var(--white-transparent);
+      align-items: center;
+      justify-content: space-between;
+      align-self: flex-end;
+    }
+  }
+
+  @container style(--show-text: 1) {
+    .text {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @container style(--show-text: 0) {
+    .text {
+      opacity: 0;
+      transform: translateX(var(--offset-left));
+    }
+  }
+
+  .figure {
+    grid-column: 5 / 13;
+    grid-row: 1;
+    margin: 0;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+
+  @container style(--show-figure: 1) {
+    .figure {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @container style(--show-figure: 0) {
+    .figure {
+      opacity: 0;
+      transform: translateX(var(--offset-right));
+    }
+  }
+}

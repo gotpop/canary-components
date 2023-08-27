@@ -8,9 +8,6 @@ export const cardsScrollData = [
             width: 1000,
             height: 500,
         },
-        list: [
-
-        ],
         button: {
             text: "View More",
             href: "/home",
@@ -20,14 +17,11 @@ export const cardsScrollData = [
         title: "The Golden Ratio",
         description: "The Fibonacci Sequence is a series of numbers in which each number is the sum of the two preceding numbers. The sequence starts with 0 and 1, and the next number in the sequence is the sum of the previous two numbers (0 + 1 = 1, 1 + 1 = 2, 1 + 2 = 3, 2 + 3 = 5, and so on).",
         image: {
-            src: "/img/curve.png",
+            src: "/img/fibonacci-spiral-red.jpg",
             alt: "Appdir1",
             width: 1000,
             height: 500,
         },
-        list: [
-
-        ],
         button: {
             text: "View More",
             href: "/container",
@@ -37,14 +31,11 @@ export const cardsScrollData = [
         title: "Mathematics, science, and nature",
         description: "The Fibonacci Sequence has many interesting properties and applications in mathematics, science, and nature. For example, the ratio of two consecutive numbers in the sequence approaches the golden ratio, which is a mathematical constant that appears in many natural phenomena such as the spiral patterns of shells and the branching patterns of trees.",
         image: {
-            src: "/img/ratio.avif",
+            src: "/img/curve.png",
             alt: "Appdir1",
-            width: 1000,
-            height: 500,
+            width: 1178,
+            height: 741,
         },
-        list: [
-
-        ],
         button: {
             text: "View More",
             href: "/subgrid",
@@ -59,28 +50,9 @@ export const cardsScrollData = [
             width: 1000,
             height: 500,
         },
-        list: [
-
-        ],
         button: {
             text: "View More",
             href: "/scroll",
-        }
-    },
-    {
-        title: "Natural phenomena",
-        description: "The golden ratio appears in many natural phenomena, such as the spiral patterns of shells, the branching patterns of trees, and the proportions of the human body. It is also found in many works of art and architecture, such as the Parthenon in Athens and the paintings of Leonardo da Vinci.",
-        image: {
-            src: "/img/fibonacci-spiral-red.jpg",
-            alt: "Appdir1",
-            width: 1000,
-            height: 500,
-        },
-        list: [
-        ],
-        button: {
-            text: "View More",
-            href: "/play",
         }
     },
 ]
