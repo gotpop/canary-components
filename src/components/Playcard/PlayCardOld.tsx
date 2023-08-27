@@ -1,6 +1,6 @@
 import Image from "next/image";
-import stylesKeyframes from "./Playcard-keyframes.style";
-import styles from "./Playcard.style";
+import styles from "./PlayCard.style";
+import stylesKeyframes from "./PlaycardKeyframes.style";
 
 type PlayProps = {
   title: string;
