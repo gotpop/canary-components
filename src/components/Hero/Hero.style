@@ -1,12 +1,14 @@
 @scope {
   :scope {
+    --local-scroll-snap-align: none;
+
     min-height: 80vh;
     min-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    scroll-snap-align: center;
+    scroll-snap-align: var(--local-scroll-snap-align);
     scroll-snap-stop: always;
     height: 100vh;
     padding-top: 222px;

@@ -1,11 +1,16 @@
 @scope {
   :scope {
+    --offset-left: -15rem;
+    --offset-right: 15rem;
+
     display: flex;
     justify-content: center;
     min-width: 100vw;
-    min-height: 100dvh;
-    padding: calc(var(--spacing) * 7) 0 calc(var(--spacing) * 5) 0;
+    height: 100dvh;
+    padding-top: 100px;
     scroll-snap-align: center;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
     animation: switch linear both;
     animation-timeline: view();
     animation-range: contain 25% contain 25%;
@@ -15,7 +20,7 @@
       align-content: center;
     }
 
-    &:nth-child(even) {
+    &:nth-child(odd) {
       background-color: var(--eraser-bg);
     }
   }
@@ -74,7 +79,7 @@
   @container style(--show-text: 0) {
     .text {
       opacity: 0;
-      transform: translateX(-30%);
+      transform: translateX(var(--offset-left));
     }
   }
 
@@ -97,7 +102,7 @@
   @container style(--show-figure: 0) {
     .figure {
       opacity: 0;
-      transform: translateX(30%);
+      transform: translateX(var(--offset-right));
     }
   }
 }

@@ -7,10 +7,10 @@ export default function Scroll() {
   const cards = cardsData.map((card, i) => <ScrollCard key={i} {...card} />)
 
   return (
-    <div>
-      <Hero title="Scroll Timeline" />
+    <>
+      <Hero title="Scroll Timeline" snap="start" />
       {cards}
-      <Footer snap="start" />
-    </div>
+      <Footer snap="end" />
+    </>
   )
 }
