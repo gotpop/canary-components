@@ -1,4 +1,4 @@
-import "./text.css";
+import "./Text.css";
 
 const textContent = {
   title: "Win more",
