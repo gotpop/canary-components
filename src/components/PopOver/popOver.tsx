@@ -37,9 +37,6 @@ export const PopOver: React.FC<PopOverProps> = ({ imageSrc, index, title, width,
       <GetStyles styles={styles} data-style="PopOver" />
       <figure className="figure">
         <Image className="image" src={imageSrc} alt={title} width={width} height={height} />
-        {/* <MyButton popovertarget={popId} popovertargetaction="show" className="button-view">
-          View image
-        </MyButton> */}
       </figure>
       <MyDiv id={popId} className="outer" popover="auto">
         <MyButton popovertarget={popId} popovertargetaction="hide" className="button-close">
