@@ -2,13 +2,20 @@
   :scope {
     --max-width: 1400px;
     --full-width: 0;
+    --local-grid-columns: [main-start] repeat(8, 1fr) [main-end];
 
     align-items: start;
     display: grid;
     flex: var(--full-width) 1 var(--max-width);
     gap: 2rem;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: var(--local-grid-columns);
     grid-auto-rows: min-content;
     max-width: var(--max-width);
+  }
+
+  @media (width >= 1000px) {
+    :scope {
+      --local-grid-columns: [main-start] repeat(12, 1fr) [main-end];
+    }
   }
 }

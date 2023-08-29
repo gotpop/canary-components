@@ -7,13 +7,13 @@
     justify-content: center;
     min-width: 100vw;
     height: 100dvh;
-    padding-top: 100px;
     scroll-snap-align: center;
     scroll-snap-stop: always;
     scroll-behavior: smooth;
     animation: switch linear both;
     animation-timeline: view();
     animation-range: contain 25% contain 25%;
+    padding: 120px 0 var(--spacing) 0;
 
     .grid {
       align-items: center;

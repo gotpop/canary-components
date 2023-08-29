@@ -1,6 +1,6 @@
 @scope {
   .intro {
-    grid-column: 1 / span 4;
+    grid-column: span 4;
     padding: 0 2rem 0 0;
     gap: 2rem;
 
@@ -20,8 +20,8 @@
     }
   }
 
-  .pop {
-    grid-column: 5 / span 8;
+  .pop-over {
+    grid-column: span 8;
   }
 
   .list {

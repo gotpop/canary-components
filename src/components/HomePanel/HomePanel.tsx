@@ -53,7 +53,7 @@ export const HomePanel: React.FC<HomePanelProps> = ({
           <BsImage />
         </MyButton>
       </div>
-      <div className="pop">
+      <div className="pop-over">
         <PopOver imageSrc={img} index={index} title={"title"} width={width} height={height} />
       </div>
     </>
