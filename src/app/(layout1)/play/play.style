@@ -4,7 +4,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50rem 0 50rem 0;
+    margin: 30rem 0 30rem 0;
+  }
+
+  :not(h1).title {
+    translate: 0 -60px;
   }
 
   .play-cards {

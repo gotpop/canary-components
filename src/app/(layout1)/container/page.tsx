@@ -14,12 +14,14 @@ export default function Container() {
         <GetStyles styles={styles} data-style="containerPage" />
         <GridMain>
           <div className="intro">
-            <h2 className="title">CSS container queries</h2>
-            <p className="p">
-              Container queries enable you to apply styles to an element based on the size of the elements container. If, for example, a container has less space available in the surrounding context,
-              you can hide certain elements or use smaller fonts. Container queries are an alternative to media queries, which apply styles to elements based on viewport size or other device
-              characteristics.
-            </p>
+            <div className="inner">
+              <h2 className="title">CSS container queries</h2>
+              <p className="p">
+                Container queries enable you to apply styles to an element based on the size of the elements container. If, for example, a container has less space available in the surrounding context,
+                you can hide certain elements or use smaller fonts. Container queries are an alternative to media queries, which apply styles to elements based on viewport size or other device
+                characteristics.
+              </p>
+            </div>
           </div>
           {cards}
         </GridMain>

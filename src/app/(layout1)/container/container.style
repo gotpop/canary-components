@@ -12,11 +12,17 @@
     }
 
     .intro {
-      background-color: var(--eraser-bg);
-      border-radius: var(--border-radius);
-      gap: var(--spacing);
-      grid-column: 4 / span 9;
-      padding: var(--spacing);
+      grid-column: span 12;
+      grid-template-columns: subgrid;
+      display: grid;
+      
+      .inner {
+        padding: var(--spacing);
+        background-color: var(--eraser-bg);
+        border-radius: var(--border-radius);
+        gap: var(--spacing);
+        grid-column: 4 /  13;
+      }
 
       .title {
         font-size: 1.5rem;
