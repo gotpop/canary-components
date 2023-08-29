@@ -11,7 +11,7 @@
     scroll-snap-align: var(--local-scroll-snap-align);
     scroll-snap-stop: always;
     height: 100vh;
-    padding-top: var(--local-padding-top);
+    padding: var(--local-padding-top) var(--spacing) 0 var(--spacing);
 
     .title {
       font-size: 6rem;

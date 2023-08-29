@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     min-width: 100vw;
+    padding: 0 var(--spacing);
 
     .grid {
       align-items: start;

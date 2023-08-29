@@ -14,6 +14,7 @@
     animation: switch linear both;
     animation-timeline: view();
     animation-range: contain 25% contain 25%;
+    padding: 0 var(--spacing);
 
     .grid {
       align-items: center;

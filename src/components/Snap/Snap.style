@@ -4,7 +4,7 @@
     scroll-snap-align: center;
     scroll-snap-stop: always;
     height: 100vh;
-    padding-top: 222px;
+    padding: 222px var(--spacing) 0 var(--spacing);
 
     display: flex;
     justify-content: center;
