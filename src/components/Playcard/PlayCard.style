@@ -15,15 +15,15 @@
     position: relative;
     transition: transform 1s ease;
     transform-style: preserve-3d;
-    filter: drop-shadow(1rem 1.5rem 1rem rgba(0, 0, 0, 91%));
     border-radius: 1rem;
-
+    
     .play-card-face {
       position: absolute;
       height: 100%;
       width: 100%;
       backface-visibility: hidden;
-
+      filter: drop-shadow(.5rem .5rem 5rem rgba(0, 0, 0, 99%));
+      
       .image {
         height: auto;
         width: 100%;
@@ -35,6 +35,12 @@
     animation: scale-and-rotate-1 linear both;
     animation-timeline: view();
     animation-range: entry 0% entry 100%;
+
+    .play-card {
+      animation: rotate-and-blur linear both;
+      animation-timeline: view();
+      animation-range: entry 40% cover 50%;
+    }
   }
 
   .play-scene-2 {
